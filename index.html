@@ -1,4 +1,20 @@
 
+@{
+    if (IsPost) {
+        string var1 = Request.Form["var1"];
+        string var2 = Request.Form["var2"];
+        string var3 = Request.Form["var3"];
+        string var4 = Request.Form["var4"];
+
+        <text>
+          You entered: <br />
+          Company Name: @var1 <br />
+          Contact Name: @var2 <br />
+          Employee Count: @var3 <br />
+        </text>
+    }
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
